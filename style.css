@@ -1,1 +1,163 @@
-<!-- style.css placeholder -->
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background: url('img/ataturk.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 5rem 1rem 2rem;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  letter-spacing: 3px;
+}
+
+#countdown {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+}
+
+.date-text {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #f3f3f3;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.taskbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  z-index: 1000;
+  font-size: 1.1rem;
+}
+
+.taskbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+
+.taskbar a:hover {
+  border-bottom: 2px solid white;
+}
+
+footer {
+  margin-top: auto;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  max-width: 900px;
+  margin: 6rem auto 3rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  min-height: 320px;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 10px;
+  display: none;
+  object-fit: contain;
+  max-height: 100%;
+}
+
+.slider img.active {
+  display: block;
+}
+
+.slider-buttons {
+  margin-top: 0.5rem;
+}
+
+.slider-buttons button {
+  background-color: #facc15;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.credit {
+  font-size: 0.8rem;
+  color: #bbb;
+  margin-top: 3rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+
+.contact-item img {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+  object-fit: contain;
+}
+
+.contact-item a {
+  color: #fcd34d;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.taskbar a.active {
+  border-bottom: 2px solid #facc15;
+  font-weight: bold;
+}
