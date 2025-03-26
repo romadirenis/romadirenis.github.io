@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 80px; /* taskbar sabit olduğu için üst boşluk verildi */
 }
 
 header {
